@@ -36,3 +36,23 @@ SELECT '====== Loading skills_job_dim table ====' AS info;
 SELECT skill_id, job_id
 FROM read_csv('https://storage.googleapis.com/sql_de/skills_job_dim.csv',
  AUTO_DETECT=true); 
+
+SELECT 'company dim ' AS table_name, COUNT(*) AS record_count FROM company_dim
+UNION ALL
+SELECT 'skills dim', COUNT(*) FROM skills_dim
+UNION ALL
+SELECT 'job postings fact', COUNT(*) FROM job_postings_fact
+UNION ALL
+SELECT 'skills job dim', COUNT(*) FROM skills_job_dim;
+
+SELECT '====== Loading company_dim table ====' AS info;
+SELECT * FROM company_dim LIMIT 5;
+
+SELECT '====== Loading skills_dim table ====' AS info;
+SELECT * FROM skills_dim LIMIT 5;
+
+SELECT '====== Loading job_postings_fact table ====' AS info;
+SELECT * FROM job_postings_fact LIMIT 5;
+
+SELECT '====== Loading skills_job_dim table ====' AS info;
+SELECT * FROM skills_job_dim LIMIT 5;
