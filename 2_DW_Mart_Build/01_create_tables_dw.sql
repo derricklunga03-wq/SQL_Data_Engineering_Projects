@@ -1,3 +1,5 @@
+--step1: CREATE TABLES FOR DATA WAREHOUSE
+
 
 DROP TABLE IF EXISTS skills_job_dim;
 DROP TABLE IF EXISTS job_postings_fact;
@@ -15,7 +17,7 @@ name VARCHAR
 
 CREATE TABLE skills_dim(
 skills_id INTEGER PRIMARY KEY,
-skill VARCHAR,
+skills VARCHAR,
 type VARCHAR
 );
 
