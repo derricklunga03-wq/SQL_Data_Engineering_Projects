@@ -12,3 +12,9 @@
 
 --mart - create skills mart
 .read 04_create_skills_mart.sql
+
+--step5:Mart- create priority role mart
+.read 05_create_priority_mart.sql
+
+---step 6:Mart- update priority role mart
+.read 06_update_priority_mart.sql
