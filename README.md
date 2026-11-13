@@ -13,6 +13,8 @@ SQL -driven analysis of data engineering job market trends using advanced queryi
 
 ### [2. Data Warehouse and Data Marts](2_DW_Mart_Build/)
 
-![EDA Project Overview](/images\1_2_Project2_Data_Pipeline.png)
+
+
+![EDA Project Overview](/images/1_2_Project2_Data_Pipeline.png)
 
 DuckDB project that builds a job-postings warehouse and flat, skills, and priority data marts. Visit the [project folder](2_DW_Mart_Build/) for the architecture diagrams, SQL scripts, and build instructions.
